@@ -1,12 +1,16 @@
 README.md
 
+This code was used to collect data for the following paper. Please cite if you end up using the code for academic purposes.
+
+Huhtamäki, J., Basole, R., Still, K., Russell, M., & Seppänen, M. (2017). Visualizing the Geography of Platform Boundary Resources: The Case of the Global API Ecosystem. In Proceedings of the 50th Hawaii International Conference on System Sciences (HICSS). https://doi.org/10125/41804
+
 I am running this in CSC cloud cPouta (and on my Macbook)
 
 First, let's set up the virtual environment (Python 3.6.4)
 
 	python -m venv VENV
 	source VENV/bin/activate
-	pip install -r requirements.txt 
+	pip install -r requirements.txt
 
 Creating data folders. One might want to automize this:
 
@@ -14,7 +18,7 @@ Creating data folders. One might want to automize this:
 	mkdir data/01-raw-api-listings
 	mkdir data/01-raw-mashup-listings
 
-Collect pages including API and mashup listings. Do note that list length is hard-coded. In all, this code is guaranteed not to work as you might think. It is developed for a one-off data collecting process a couple years ago 
+Collect pages including API and mashup listings. Do note that list length is hard-coded. In all, this code is guaranteed not to work as you might think. It is developed for a one-off data collecting process a couple years ago
 
 	python run_crawl_listings.py
 
@@ -51,9 +55,9 @@ Scrape the data from API and mashup pages
 ETC
 
 	run_scrape_apis.py
-	
+
 	run_resolve_locations.py
-	
+
 	run_geocode.py
-	
+
 	run_insert_regions.py
